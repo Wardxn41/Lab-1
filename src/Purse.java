@@ -49,7 +49,5 @@ public class Purse {
     public int[] getCounts() {
         return counts;
     }
-
-
 }
-
+//

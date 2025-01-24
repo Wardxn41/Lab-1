@@ -55,10 +55,11 @@ public class PursePanel extends JPanel {
 
                 // Draw the image of the denomination
                 Image img = denominations[i].getImage();
-                g.drawImage(img, x + 50, y - 20, 250, 70, this);  // Adjust size and position as needed
+                g.drawImage(img, x + 50, y - 20, 250, 70, this);
 
-                y += 60;  // Move down for the next denomination (adjust spacing as needed)
+                y += 60;  // Move down for the next denomination
             }
         }
     }
 }
+//

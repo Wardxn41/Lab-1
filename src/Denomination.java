@@ -37,3 +37,4 @@ public class Denomination {
         return image;
     }
 }
+//
