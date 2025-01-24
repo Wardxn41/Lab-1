@@ -42,6 +42,13 @@ public class Purse {
             }
         }
     }
+    public Denomination[] getDenominations() {
+        return denominations;
+    }
+
+    public int[] getCounts() {
+        return counts;
+    }
 
 
 }

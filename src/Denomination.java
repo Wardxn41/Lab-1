@@ -1,18 +1,23 @@
-public class Denomination {
-    String name;
-    double amount;
-    String form;
-    String img;
+import javax.swing.ImageIcon;  // Correct import for ImageIcon
+import java.awt.Image;
 
-    // Constructor to initialize the denomination
-    public Denomination(String name, double amount, String form, String img) {
+public class Denomination {
+    private String name;
+    private double amount;
+    private String form; // "bill" or "coin"
+    private String imageFile;
+    private Image image;
+
+    // Constructor
+    public Denomination(String name, double amount, String form, String imageFile) {
         this.name = name;
         this.amount = amount;
         this.form = form;
-        this.img = img;
+        this.imageFile = imageFile;
     }
 
-    // Getters for the properties
+
+    // Getters
     public String getName() {
         return name;
     }
@@ -25,7 +30,10 @@ public class Denomination {
         return form;
     }
 
-    public String getImg() {
-        return img;
+    public Image getImage() {
+        if (image == null) {
+            this.image = new ImageIcon(imageFile).getImage();
+        }
+        return image;
     }
 }
