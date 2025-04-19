@@ -12,7 +12,6 @@ public class GUIMakingChange {
         frame.add(registerPanel);
         // Show the frame
         frame.setVisible(true);
-
     }
 }
 //
