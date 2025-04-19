@@ -1,0 +1,21 @@
+I am implementing the strategy pattern and the factory pattern.
+The goal is primarily to improve flexibility and make the code more
+modular.
+
+How I implemented the strategy pattern:
+1. I first created an interface called ChangeStrategy, this is for
+all of the change making strategies. Any class that is using this interface
+can define their own way of making change.
+2. I created MakeChangeStrategy, which replaces my original logic in 
+Register.makeChange and placing it within it's own class
+3. I changed the register file where it no longer performs logic directly.
+It delegates to ChangeStrategy, and now you can make more changes without 
+modifying the class.
+
+How I implemented the factory pattern:
+1. I removed the implementation of bills and coins from the pursepanel and registerpanel
+and moved it into it's own file that the files mentioned referenced instead. 
+allowing more flexibility.
+
+Link to Repo:
+https://github.com/Wardxn41/Lab-1
