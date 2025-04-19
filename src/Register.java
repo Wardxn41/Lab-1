@@ -5,7 +5,6 @@ public class Register {
     public Register(Denomination[] denominations) {
         this.denominations = denominations;
     }
-
     // Method to create a purse with the correct denominations
     public Purse makeChange(double amount) {
         Purse purse = new Purse(denominations);
@@ -19,14 +18,12 @@ public class Register {
                 amount -= count * denominations[i].getAmount();  // Subtract the amount of the denomination
             }
         }
-
         System.out.println("Change Breakdown:");
         purse.printContents();  // Print the contents of the purse
-
         return purse;
     }
 }
-//
+
 
 
 

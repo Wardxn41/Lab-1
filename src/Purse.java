@@ -26,7 +26,6 @@ public class Purse {
         }
     return 0;
     }
-
     public double getValue() {
         double total = 0;
         for (int i = 0; i < denominations.length; i++) {
@@ -34,7 +33,6 @@ public class Purse {
         }
         return total;
     }
-
     public void printContents() {
         for (int i = 0; i < denominations.length; i++) {
             if (counts[i] > 0) {
@@ -45,7 +43,6 @@ public class Purse {
     public Denomination[] getDenominations() {
         return denominations;
     }
-
     public int[] getCounts() {
         return counts;
     }

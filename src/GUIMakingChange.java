@@ -7,11 +7,9 @@ public class GUIMakingChange {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // Set the frame size
         frame.setSize(800, 800);
-
         // Create RegisterPanel and add it to the frame
         RegisterPanel registerPanel = new RegisterPanel();
         frame.add(registerPanel);
-
         // Show the frame
         frame.setVisible(true);
 

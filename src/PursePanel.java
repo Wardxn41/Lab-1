@@ -28,7 +28,6 @@ public class PursePanel extends JPanel {
         // Get the denominations and counts from the purse
         Denomination[] denominations = purse.getDenominations();
         int[] counts = purse.getCounts();
-
         // If the purse is empty, display a message
         boolean isEmpty = true;
         for (int count : counts) {
@@ -37,12 +36,10 @@ public class PursePanel extends JPanel {
                 break;
             }
         }
-
         if (isEmpty) {
             g.drawString("Empty Purse", 10, 20);
             return;
         }
-
         // Display each denomination's image
         int x = 10;
         int y = 20;
@@ -62,4 +59,3 @@ public class PursePanel extends JPanel {
         }
     }
 }
-//
